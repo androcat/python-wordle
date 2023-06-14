@@ -20,7 +20,8 @@ while count > 0:
     guess_list = list(guess)
     count -= 1
     if guess == word:
-        print("You win! You guessed",word,"correctly in",count,"guesses.")
+        print(f"{Fore.GREEN}",word,f"{Style.RESET_ALL}")
+        print("You win!")
         break
     else:
         for (guess_letter, word_letter) in zip(guess_list, word_list):
